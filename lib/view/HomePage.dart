@@ -1,7 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-//import 'package:flutter_localjson_app/model/UserInfo.dart';
+import 'package:flutter_localjson_app/model/UserInfo.dart';
+
 
 
 
@@ -25,39 +26,55 @@ class HomePageState extends State<HomePage>{
         title: Text("Load JSON Data"),
       ),
 
-      body:Container(
-        child: Center(
-          child: FutureBuilder(
-            future: DefaultAssetBundle
-            .of(context)
-            .loadString("load_json/userDetail.json"),
+       body: Center(
+         child:Text('JSON File Loading'),
+       ),
+       //Container(
+      //   child: Center(
+      //     child: FutureBuilder(
+      //       future: DefaultAssetBundle
+      //       .of(context)
+      //       .loadString("load_json/userDetail.json"),
              
-            builder: (context,snapshot){
-              var userData = jsonDecode(snapshot.data.toString());
+      //       builder: (context,snapshot){
+      //        // var userData = jsonDecode(snapshot.data.toString());
+      //       //  Map userMap = jsonDecode(snapshot.data.toString());
+      //       //  var user = UserInfo.fromJson(userMap);
              
-              
-              return  ListView.builder(
-               // itemCount: userData == null? 0:userData.length,
-                itemBuilder: (BuildContext context,int index){
-                  return Card(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: <Widget>[
-                                Text("Name:"+userData[index]['name']),
-                                Text("Email:"+userData[index]['email']),
-                                Text("Gender:"+userData[index]['gender']),
-                              ],
-                            ),
-                  );
-                },
-              );
-            },
-          ),
-        ),
+      //        return Center(
+      //          child:RaisedButton(
+      //                  child: Text('Show Data'),
+      //                 //onPressed:, //ShowData(user),
+      //        ),);
+            
+               
+      //         // return  ListView.builder(
+      //         //   itemCount: userData == null? 0:userData.length,
+      //         //   itemBuilder: (BuildContext context,int index){
+      //         //     return Card(
+      //         //               child: Column(
+      //         //                 crossAxisAlignment: CrossAxisAlignment.stretch,
+      //         //                 children: <Widget>[
+      //         //                   Text("Name:"+userData[index]['name']),
+      //         //                   Text("Email:"+userData[index]['email']),
+      //         //                   Text("Gender:"+userData[index]['gender']),
+      //         //                 ],
+      //         //               ),
+      //         //     );
+      //         //   },
+      //         // );
+      //       },
+      //     ),
+      //   ),
 
-      ),
+      // ),
     );
   }
-
+  
+  // void ShowData(var userData)
+  // {
+  //    print('Howdy, ${userData.name}!');
+  //    print('We sent the verification link to ${userData.email}.');
+  // }
  
 }

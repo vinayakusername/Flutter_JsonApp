@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 
 class UserInfo {
   final int id;
@@ -11,6 +9,7 @@ class UserInfo {
 
   UserInfo(this.id,this.name,this.age, this.email,this.gender);
 
+  //A User.fromJson() constructor, for constructing a new User instance from a map structure
    UserInfo.fromJson(Map<String, dynamic> json)
       : id=json['id'],
         name = json['name'],
@@ -18,7 +17,8 @@ class UserInfo {
         email = json['email'],
         gender=json['gender'];
   
-
+   //A toJson() method, which converts a User instance into a map.
+   
   // Map<String, dynamic> toJson() =>
   //   {
   //     'id': id,
