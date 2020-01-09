@@ -1,0 +1,49 @@
+[
+    {
+        "id":1,
+        "name":"ganesh",
+         "age":"21",
+         "email":"ganesh@gmail.com",
+         "gender":"male"
+    },
+
+    { 
+         "id":2,
+        "name":"shankar",
+         "age":"22",
+         "email":"shankar@gmail.com",
+         "gender":"male"
+    },
+
+    {
+        "id":3,
+        "name":"Ranjit",
+         "age":"23",
+         "email":"ranjit@gmail.com",
+         "gender":"male"
+    },
+
+    {
+        "id":4,
+        "name":"bharat",
+         "age":"24",
+         "email":"bharat@gmail.com",
+         "gender":"male"
+    },
+
+    {
+        "id":5,
+        "name":"pramod",
+         "age":"25",
+         "email":"pramod@gmail.com",
+         "gender":"male"
+    },
+
+    {
+        "id":6,
+        "name":"vishwas",
+         "age":"26",
+         "email":"vishwas@gmail.com",
+         "gender":"male"
+    }
+]
