@@ -7,9 +7,11 @@ import 'package:flutter_localjson_app/model/UserInfo.dart';
 
 
 Future<String> loadShowData() async {
-String data = await rootBundle.loadString('load_json/userDetail.json');
+String data = await rootBundle.loadString("load_json/userDetail.json");
 
-Map userMap = jsonDecode(data.toString());
+String jsonString= data.toString();
+
+Map userMap = jsonDecode(jsonString);
 var user = UserInfo.fromJson(userMap);
 
 print('Howdy, ${user.name}!');

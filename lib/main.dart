@@ -2,12 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localjson_app/utility/Serialization.dart';
 import 'package:flutter_localjson_app/view/HomePage.dart';
-
-import 'bloc/showJson.dart';
-
-
-
 
 // void main()=> runApp(new MaterialApp(
 
@@ -18,7 +14,7 @@ import 'bloc/showJson.dart';
 //   home: new HomePage(),
 // ));
 
-void main()
+void main() async
 {
 runApp(new MaterialApp( 
   theme: ThemeData(
@@ -27,6 +23,7 @@ runApp(new MaterialApp(
   home: new HomePage(),
 )); 
 
-  loadShowData(); 
+loadShowData();
+  
 }
 

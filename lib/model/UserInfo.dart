@@ -19,14 +19,14 @@ class UserInfo {
   
    //A toJson() method, which converts a User instance into a map.
    
-  // Map<String, dynamic> toJson() =>
-  //   {
-  //     'id': id,
-  //     'name': name,
-  //     'age': age,
-  //     'email': email,
-  //     'gender':gender
-  //   };
+  Map<String, dynamic> toJson() =>
+    {
+      'id': id,
+      'name': name,
+      'age': age,
+      'email': email,
+      'gender':gender
+    };
 
  
 }
