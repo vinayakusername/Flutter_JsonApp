@@ -38,16 +38,7 @@ class HomePageState extends State<HomePage>{
              
       //       builder: (context,snapshot){
       //        // var userData = jsonDecode(snapshot.data.toString());
-      //       //  Map userMap = jsonDecode(snapshot.data.toString());
-      //       //  var user = UserInfo.fromJson(userMap);
-             
-      //        return Center(
-      //          child:RaisedButton(
-      //                  child: Text('Show Data'),
-      //                 //onPressed:, //ShowData(user),
-      //        ),);
-            
-               
+                     
       //         // return  ListView.builder(
       //         //   itemCount: userData == null? 0:userData.length,
       //         //   itemBuilder: (BuildContext context,int index){
@@ -71,10 +62,6 @@ class HomePageState extends State<HomePage>{
     );
   }
   
-  // void ShowData(var userData)
-  // {
-  //    print('Howdy, ${userData.name}!');
-  //    print('We sent the verification link to ${userData.email}.');
-  // }
+ 
  
 }
